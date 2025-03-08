@@ -1,39 +1,50 @@
 document.addEventListener("DOMContentLoaded", () => {
     const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-
     const line1 = document.getElementById("line1");
     const line2 = document.getElementById("line2");
     const line3 = document.getElementById("line3");
+    const mobileMenu = document.getElementById("mobile-menu"); // 🔹 Selecciona el menú
 
+    // Posicionar las líneas correctamente
+    line1.style.top = "25%";
+    line2.style.top = "50%";
+    line3.style.top = "75%";
 
-    const toggleMenu = () => {
-        mobileMenu.classList.toggle("hidden");
+    menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("open");
 
-        if (!mobileMenu.classList.contains("hidden")) {
-            line1.classList.add("rotate-45", "translate-y-[7px]", "w-6");
-            line2.classList.add("opacity-0");
-            line3.classList.add("-rotate-45", "-translate-y-[7px]", "w-6");
+        if (menuBtn.classList.contains("open")) {
+            line1.style.transform = "translateY(10px) rotate(45deg)";
+            line2.style.opacity = "0";
+            line3.style.transform = "translateY(-10px) rotate(-45deg)";
+
+            // 🔹 Mostrar menú
+            mobileMenu.classList.remove("hidden");
+            mobileMenu.classList.add("flex", "flex-col");
         } else {
-            line1.classList.remove("rotate-45", "translate-y-[7px]", "w-6");
-            line2.classList.remove("opacity-0");
-            line3.classList.remove("-rotate-45", "-translate-y-[7px]", "w-6");
+            line1.style.transform = "translateY(0) rotate(0)";
+            line2.style.opacity = "1";
+            line3.style.transform = "translateY(0) rotate(0)";
+
+            // 🔹 Ocultar menú
+            mobileMenu.classList.add("hidden");
+            mobileMenu.classList.remove("flex", "flex-col");
         }
-    };
+    });
 
-
-    menuBtn.addEventListener("click", toggleMenu);
-
-
+    // 🔹 Cerrar menú al hacer scroll
     window.addEventListener("scroll", () => {
         if (!mobileMenu.classList.contains("hidden")) {
             mobileMenu.classList.add("hidden");
-            line1.classList.remove("rotate-45", "translate-y-[7px]", "w-6");
-            line2.classList.remove("opacity-0");
-            line3.classList.remove("-rotate-45", "-translate-y-[7px]", "w-6");
+            menuBtn.classList.remove("open");
+
+            line1.style.transform = "translateY(0) rotate(0)";
+            line2.style.opacity = "1";
+            line3.style.transform = "translateY(0) rotate(0)";
         }
     });
 });
+
 
 $(document).ready(function () {
     $('.client-carousel').slick({
