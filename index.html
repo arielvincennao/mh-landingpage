@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MintiHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body class="bg-white text-gray-700">
+    <nav class="py-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center mt-2">
+                    <img src="./images/logo.png" alt="Logo" class="h-10 md:h-12">
+                </div>
+                <div class="hidden md:flex space-x-7 font-semibold text-lg">
+                    <a href="#" class="relative lineb">¿Qué es MintiHub?</a>
+                    <a href="#" class="relative lineb">Beneficios</a>
+                    <a href="#" class="relative lineb">Misión</a>
+                    <a href="#" class="relative lineb">Equipo</a>
+                    <a href="#" class="relative lineb">Contacto</a>
+                </div>
+                <div class="md:hidden flex items-center h-full">
+                    <button id="menu-btn" class="relative w-10 h-12 flex flex-col justify-center items-center gap-1.5">
+                        <span id="line1" class="block w-8 h-1 bg-gray-700 transition-transform duration-300"></span>
+                        <span id="line2" class="block w-8 h-1 bg-gray-700 transition-opacity duration-300"></span>
+                        <span id="line3" class="block w-8 h-1 bg-gray-700 transition-transform duration-300"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden bg-white px-4 py-10 space-y-6 shadow-md font-semibold text-center text-lg">
+            <a href="#" class="block hover:text-orange-400">¿Qué es MintiHub?</a>
+            <a href="#" class="block hover:text-orange-400">Beneficios</a>
+            <a href="#" class="block hover:text-orange-400">Misión</a>
+            <a href="#" class="block hover:text-orange-400">Equipo</a>
+            <a href="#" class="block hover:text-orange-400">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="text-left px-4 py-32 w-full">
+        <div class="max-w-7xl mx-auto py-5 hiddenElement fadeIn">
+            <div
+                class="inline-block bg-orange-100 mintihub-color text-base md:text-lg font-semibold px-4 py-1 rounded-full mb-4">
+                Bienvenido a MintiHub
+            </div>
+            <div class="max-w-5xl text-left">
+                <h1 class="font-bold tracking-wide mb-6 text-5xl md:text-7xl">
+                    Generando las <span class="mintihub-color">mejores oportunidades</span> de negocios
+                </h1>
+            </div>
+            <p class="max-w-3xl text-xl md:text-2xl mb-9 font-semibold text-gray-700">
+                Conectamos el mundo real con el mundo digital mediante tecnología e instrumentos legales para hacer
+                negocios
+                rentables y seguros.
+            </p>
+            <a href="#"
+                class="mintihub-color-bg text-base md:text-xl text-white font-semibold px-10 py-4 rounded-full shadow-md hover:bg-orange-400 transition duration-300 inline-flex items-center group">
+                Ver proyectos
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    class="w-5 h-5 ml-2 mt-1 transition-transform transform group-hover:translate-x-1"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <section class="bg-gray-50 py-32 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-semibold mb-4">¿Qué es MintiHub?</h1>
+            <p class="text-xl md:text-3xl font-semibold mintihub-color max-w-2xl mx-auto mb-12">
+                El vínculo entre quienes buscan y quienes generan oportunidades.
+            </p>
+        </div>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 pt-5 hiddenElement fadeIn">
+            <div
+                class="bg-white p-8 rounded-3xl shadow-lg transition-all transform hover:scale-105 hover:shadow-xl flex items-start space-x-6">
+                <div class="bg-orange-100 p-4 rounded-xl shadow-md">
+                    <svg class="w-12 h-12 text-orange-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8V4m0 4a4 4 0 0 1 4 4h4m-4 0a4 4 0 0 1-4 4m0 0v4m0-4a4 4 0 0 1-4-4H4m4 0a4 4 0 0 1 4-4" />
+                    </svg>
+                </div>
+                <div>
+                    <h3
+                        class="text-xl md:text-2xl font-semibold relative inline-block after:block after:w-16 after:h-1 after:bg-orange-400 after:mt-2">
+                        Tecnología
+                    </h3>
+                    <p class="mt-3 text-lg md:text-xl text-gray-600">
+                        Nuestra plataforma garantiza transacciones seguras, ágiles y accesibles mediante un sistema de
+                        registro inmutable y trazable de punta a punta. Verifica cada operación en tiempo real.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="bg-white p-8 rounded-3xl shadow-lg transition-all transform hover:scale-105 hover:shadow-xl flex items-start space-x-6">
+                <div class="bg-orange-100 p-4 rounded-xl shadow-md">
+                    <svg class="w-12 h-12 text-orange-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+                <div>
+                    <h3
+                        class="text-xl md:text-2xl font-semibold relative inline-block after:block after:w-16 after:h-1 after:bg-orange-400 after:mt-2">
+                        Respaldo legal
+                    </h3>
+                    <p class="mt-3 text-lg md:text-xl text-gray-600">
+                        Cada proyecto está respaldado por instrumentos legales exigibles y verificables tanto en el
+                        mundo
+                        real como en la red. Brindamos seguridad jurídica y acuerdos claros.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-32 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+            <div>
+                <div class="hiddenElement flipX">
+                    <img src="./images/h1.jpg" alt=""
+                        class="max-w-sm md:max-w-xl h-auto rounded-tr-lg rounded-bl-lg rounded-tl-lg shadow-lg hover:shadow-xl transition duration-300">
+                </div>
+            </div>
+
+            <div class="max-w-2xl text-left ml-12 hiddenElement slideRight">
+                <h1 class="text-5xl md:text-6xl font-semibold mb-4">
+                    ¿Por qué elegir MintiHub?
+                </h1>
+
+                <p class="text-xl md:text-3xl font-semibold mintihub-color max-w-2xl mb-12">
+                    Accede a oportunidades seguras, flexibles y con respaldo real.
+                </p>
+
+
+                <div class="space-y-6 text-lg md:text-xl">
+                    <div class="flex items-center space-x-4">
+                        <div class="p-2 rounded-lg">
+                            <svg class="w-4 h-4 mintihub-color" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <circle cx="12" cy="12" r="7" />
+                            </svg>
+                        </div>
+                        <p class="text-gray-600">Accede a proyectos que estaban fuera de tu alcance.</p>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="p-2 rounded-lg">
+                            <svg class="w-4 h-4 mintihub-color" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <circle cx="12" cy="12" r="7" />
+                            </svg>
+                        </div>
+                        <p class="text-gray-600">Apóyate en un registro inmutable y trazable que garantiza transparencia
+                            y seguridad.</p>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="p-2 rounded-lg">
+                            <svg class="w-4 h-4 mintihub-color" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <circle cx="12" cy="12" r="7" />
+                            </svg>
+                        </div>
+                        <p class="text-gray-600">Opera con liquidez mejorada, comprando o vendiendo cuando lo necesites.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="p-2 rounded-lg">
+                            <svg class="w-4 h-4 mintihub-color" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <circle cx="12" cy="12" r="7" />
+                            </svg>
+                        </div>
+                        <p class="text-gray-600">Diversifica sin complicaciones en múltiples sectores de alto potencial.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="p-2 rounded-lg">
+                            <svg class="w-4 h-4 mintihub-color" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <circle cx="12" cy="12" r="7" />
+                            </svg>
+                        </div>
+                        <p class="text-gray-600">Optimiza tus transacciones con procesos ágiles y eficientes sin costos
+                            innecesarios.</p>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="p-2 rounded-lg">
+                            <svg class="w-4 h-4 mintihub-color" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <circle cx="12" cy="12" r="7" />
+                            </svg>
+                        </div>
+                        <p class="text-gray-600">Descubre oportunidades con respaldo legal sólido, con contratos
+                            exigibles y verificables en el mundo real.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-gray-50 py-32 px-6">
+        <div class="max-w-4xl mx-auto text-center mb-12">
+            <h1 class="text-5xl md:text-6xl font-semibold mb-12">
+                ¿A quién está dirigido?
+            </h1>
+        </div>
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-16 justify-center hiddenElement fadeIn pt-10">
+
+            <div
+                class="flex flex-col items-center space-y-6 bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <div class="bg-orange-100 p-4 rounded-full shadow-md">
+                    <svg class="w-12 h-12 text-orange-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8V4m0 4a4 4 0 0 1 4 4h4m-4 0a4 4 0 0 1-4 4m0 0v4m0-4a4 4 0 0 1-4-4H4m4 0a4 4 0 0 1 4-4" />
+                    </svg>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-3">
+                        Creadores de oportunidades</h3>
+                    <p class="text-gray-600 text-lg md:text-xl">
+                        Desarrolladores, emprendedores y propietarios de activos que buscan capital para hacer crecer
+                        sus proyectos; accediendo a financiamiento ágil y eficiente sin las barreras tradicionales del
+                        mercado.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col items-center space-y-6 bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <div class="bg-orange-100 p-4 rounded-full shadow-md">
+                    <svg class="w-12 h-12 text-orange-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8V4m0 4a4 4 0 0 1 4 4h4m-4 0a4 4 0 0 1-4 4m0 0v4m0-4a4 4 0 0 1-4-4H4m4 0a4 4 0 0 1 4-4" />
+                    </svg>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-3">
+                        Aliados Financieros</h3>
+                    <p class="text-gray-600 text-lg md:text-xl">
+                        Personas que buscan hacer crecer su capital accediendo a negocios antes inaccesibles,
+                        participando en proyectos productivos y comerciales con montos flexibles, diversificando su
+                        portafolio de manera sencilla, segura y transparente.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col items-center space-y-6 bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                <div class="bg-orange-100 p-4 rounded-full shadow-md">
+                    <svg class="w-12 h-12 text-orange-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8V4m0 4a4 4 0 0 1 4 4h4m-4 0a4 4 0 0 1-4 4m0 0v4m0-4a4 4 0 0 1-4-4H4m4 0a4 4 0 0 1 4-4" />
+                    </svg>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-xl md:text-2xl font-semibold mb-3">
+                        Instituciones</h3>
+                    <p class="text-gray-600 text-lg md:text-xl">
+                        Fondos de inversión, entidades financieras y otras organizaciones que buscan diversificar su
+                        portafolio en proyectos con respaldo real, accediendo a oportunidades estratégicas con
+                        condiciones optimizadas y mayor escala de producción.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-32 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+
+            <p class="text-5xl md:text-6xl font-semibold mb-4">
+                ¿Qué nos hace únicos?
+            </p>
+
+
+            <h2 class="text-xl md:text-3xl font-semibold mintihub-color mb-12">
+                Personas, Activos y Tecnología
+            </h2>
+        </div>
+
+        <div class="max-w-6xl mx-auto space-y-12 py-20 px-6">
+
+            <div
+                class="flex flex-col md:flex-row items-center justify-between gap-6 mb-12 border-b border-gray-300 pb-12 hiddenElement slideRight">
+                <div class="w-full md:w-1/2 text-center">
+                    <h3 class="text-2xl md:text-4xl font-semibold mintihub-color mb-3">
+                        Nuestro Equipo
+                    </h3>
+                    <p class="text-gray-600 text-lg md:text-xl">
+                        Contamos con un equipo altamente capacitado y comprometido con el éxito de nuestros clientes.
+                        Trabajamos con pasión para proporcionar soluciones innovadoras que realmente marcan la
+                        diferencia.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <img src="./images/team.png" alt="Imagen equipo"
+                        class="max-w-sm h-auto rounded-tr-lg rounded-br-lg shadow-lg hover:shadow-xl transition duration-300">
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col md:flex-row-reverse items-center justify-between gap-6 mb-12 border-b border-gray-300 pb-12 hiddenElement slideLeft">
+                <div class="w-full md:w-1/2 text-center">
+                    <h3 class="text-2xl md:text-4xl font-semibold mintihub-color mb-3">
+                        Activos Reales
+                    </h3>
+                    <p class="text-gray-600 text-lg md:text-xl">
+                        Nuestros activos están respaldados por proyectos reales y medibles. Garantizamos la
+                        transparencia y
+                        seguridad en cada transacción, asegurando que tu inversión esté siempre protegida.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <img src="./images/activos.png" alt="Imagen activos"
+                        class="max-w-sm h-auto rounded-tl-lg rounded-bl-lg shadow-lg hover:shadow-xl transition duration-300">
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-12 hiddenElement slideRight">
+                <div class="w-full md:w-1/2 text-center">
+                    <h3 class="text-2xl md:text-4xl md:text-3xl font-semibold mintihub-color mb-3">
+                        Tecnología Avanzada
+                    </h3>
+                    <p class="text-gray-600 text-lg md:text-xl">
+                        Implementamos las últimas tecnologías en todos nuestros procesos, lo que nos permite ofrecer un
+                        servicio
+                        más rápido, eficiente y seguro para nuestros clientes, sin dejar de lado la innovación.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <img src="./images/tecnologia.png" alt="Imagen tecnología"
+                        class="max-w-sm h-auto rounded-tr-lg rounded-br-lg shadow-lg hover:shadow-xl transition duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative bg-gray-50 py-32 px-6 overflow-hidden">
+        <div class="absolute top-0 left-0 w-32 h-32 bg-orange-400 opacity-10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-40 h-40 bg-orange-500 opacity-10 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2 flex flex-col justify-center">
+                <div class="max-w-lg">
+                    <p
+                        class="text-5xl md:text-6xl font-semibold mb-4 relative inline-block after:block after:w-24 after:h-1 after:bg-orange-400 after:mt-2">
+                        Nuestra misión
+                    </p>
+
+                    <h2 class="text-xl md:text-3xl font-semibold mintihub-color mb-6 leading-snug">
+                        "Generamos el lugar y el momento indicado para hacer los mejores negocios"
+                    </h2>
+
+                    <p class="text-gray-600 text-lg md:text-xl">
+                        Nuestra visión es ser una opción relevante para los interesados en invertir en LATAM,
+                        transformando la
+                        manera en que las personas acceden a oportunidades de inversión.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 relative hiddenElement flipY">
+                <div class="absolute inset-0 mintihub-color-bg rounded-lg transform rotate-3 scale-105 opacity-70">
+                </div>
+                <img src="./images/mision.jpg" alt="Misión MintiHub"
+                    class="relative w-full h-full object-cover rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-32 px-6">
+        <div class="max-w-6xl mx-auto text-left md:text-center">
+            <h1
+                class="text-5xl md:text-6xl font-semibold mb-4 relative inline-block after:block after:w-24 after:h-1 after:bg-orange-400 after:mt-2">
+                Nuestros clientes
+            </h1>
+
+            <p class="text-xl md:text-3xl font-semibold mintihub-color mb-12">
+                Historias de éxito que inspiran
+            </p>
+        </div>
+
+        <div class="client-carousel max-w-6xl mx-auto">
+            <div class="text-center  p-8 italic">
+                <p class="text-gray-600 text-lg md:text-xl mb-4">
+                    "El equipo de MintiHub nos brindó una excelente consultoría que nos permitió mejorar nuestra
+                    estrategia empresarial. Los resultados fueron impresionantes."
+                </p>
+                <p class="font-semibold mintihub-color">
+                    - Laura Rodríguez, CEO de TechForward
+                </p>
+            </div>
+            <div class="text-center p-8 italic">
+                <p class="text-gray-600 text-lg md:text-xl mb-4">
+                    "Gracias a su equipo de desarrollo, lanzamos nuestra app móvil en tiempo récord. ¡La experiencia fue
+                    increíble y superó nuestras expectativas!"
+                </p>
+                <p class="font-semibold mintihub-color">
+                    - Javier Pérez, Director de Marketing, Digital Solutions
+                </p>
+            </div>
+            <div class="text-center p-8 italic">
+                <p class="text-gray-600 text-lg md:text-xl mb-4">
+                    "Con el servicio de marketing digital, nuestra visibilidad en redes sociales creció de manera
+                    impresionante. ¡Super recomendable!"
+                </p>
+                <p class="font-semibold mintihub-color">
+                    - Rosa García, Fundadora de EcoLife
+                </p>
+            </div>
+            <div class="text-center p-8 italic">
+                <p class="text-gray-600 text-lg md:text-xl mb-4">
+                    "Gracias a la asesoría de MintiHub, pudimos optimizar nuestros procesos internos y reducir costos.
+                    ¡Definitivamente una de las mejores decisiones para nuestra empresa!"
+                </p>
+                <p class="font-semibold mintihub-color">
+                    - Carlos Méndez, CFO de GlobalTech
+                </p>
+            </div>
+            <div class="text-center p-8 italic">
+                <p class="text-gray-600 text-lg md:text-xl mb-4">
+                    "El equipo de MintiHub transformó nuestra presencia en línea. Con sus estrategias de marketing
+                    digital, vimos un aumento notable en nuestras ventas. ¡Altamente recomendados!"
+                </p>
+                <p class="font-semibold mintihub-color">
+                    - Ana Torres, Gerente de Ventas, FitLife
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-50 py-32 px-6 md:py-0 md:px-0">
+        <div class="grid grid-cols-1 md:grid-cols-2" style="height: 50vh;">
+            <div class="relative h-full">
+                <div class="parallax bg-cover bg-center h-full"
+                    style="background-image: url('./images/aboutus.jpeg'); object-fit: cover;"></div>
+            </div>
+
+            <div class="flex items-center justify-center px-6 md:px-12 md:py-0 h-full text-left md:text-center">
+                <h1
+                    class="text-5xl md:text-6xl font-semibold text-gray-800 relative inline-block after:block after:w-24 after:h-1 after:bg-orange-400 after:mt-2">
+                    Nuestros profesionales
+                </h1>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2" style="height: 50vh;">
+            <div class="text-gray-600 text-lg md:text-xl space-y-8 py-5 md:py-10 px-6 md:px-20 flex items-center">
+                <div>
+                    <p class="leading-relaxed">
+                        Nuestro equipo está compuesto por profesionales altamente capacitados y apasionados por la
+                        tecnología. A lo largo de los años, hemos logrado destacarnos por nuestra capacidad para
+                        enfrentar desafíos complejos y generar resultados exitosos.
+                    </p>
+                    <p class="leading-relaxed">
+                        Creemos firmemente en los valores de la integridad, la innovación y la colaboración. Trabajamos
+                        de cerca con nuestros clientes para entender sus retos y brindar soluciones que realmente hagan
+                        la diferencia.
+                    </p>
+                </div>
+            </div>
+            <div class="relative h-full">
+                <div class="parallax bg-cover bg-center h-full"
+                    style="background-image: url('./images/aboutus.jpg'); object-fit: cover;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-32 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-5xl md:text-6xl font-semibold text-gray-800 mb-4">
+                Visita el Blog
+            </p>
+            <h2 class="text-xl md:text-3xl font-semibold mintihub-color mb-12">
+                Últimos Artículos
+            </h2>
+        </div>
+
+        <div class="max-w mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 hiddenElement fadeIn">
+
+            <div class="bg-gray-50 rounded-lg shadow-lg p-6 sm:p-8 flex flex-col sm:flex-row">
+                <div class="w-full sm:w-1/3">
+                    <img src="./images/mision.jpg" alt="Imagen 1" class="w-full h-full object-cover rounded-lg cardimg">
+                </div>
+                <div class="w-full sm:w-2/3 sm:pl-6 mt-4 sm:mt-0">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                        Cómo optimizar tu estrategia digital
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        La optimización de tu estrategia digital puede marcar la diferencia en el éxito de tu empresa.
+                        En este artículo, te mostramos las mejores prácticas...
+                    </p>
+                    <p class="text-sm text-gray-500">Publicado el 01 de Marzo, 2025 por <span
+                            class="font-semibold">Carlos López</span></p>
+                    <a href="#" class="mintihub-color font-semibold">Leer más</a>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg shadow-lg p-6 sm:p-8 flex flex-col sm:flex-row">
+                <div class="w-full sm:w-1/3">
+                    <img src="./images/h2.jpg" alt="Imagen 2" class="w-full h-full object-cover rounded-lg cardimg">
+                </div>
+                <div class="w-full sm:w-2/3 sm:pl-6 mt-4 sm:mt-0">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                        La importancia de un diseño responsive
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        Descubre cómo un diseño responsive puede mejorar la experiencia de usuario y optimizar la
+                        interacción con tu sitio web en dispositivos móviles.
+                    </p>
+                    <p class="text-sm text-gray-500">Publicado el 15 de Febrero, 2025 por <span
+                            class="font-semibold">Ana González</span></p>
+                    <a href="#" class="mintihub-color font-semibold">Leer más</a>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg shadow-lg p-6 sm:p-8 flex flex-col sm:flex-row">
+                <div class="w-full sm:w-1/3">
+                    <img src="./images/dev.jpg" alt="Imagen 3" class="w-full h-full object-cover rounded-lg cardimg">
+                </div>
+                <div class="w-full sm:w-2/3 sm:pl-6 mt-4 sm:mt-0">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                        Estrategias de marketing para 2025
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        En este artículo, exploramos las estrategias de marketing que serán claves en el año 2025 y cómo
+                        puedes aplicarlas a tu negocio.
+                    </p>
+                    <p class="text-sm text-gray-500">Publicado el 25 de Enero, 2025 por <span class="font-semibold">Luis
+                            Martínez</span></p>
+                    <a href="#" class="mintihub-color font-semibold">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-to-t from-[#F7A92C] 60% to-[#FFFFFF] 100% bg-gray-100 py-20 px-6 pt-40">
+        <div class="mx-auto max-w-7xl text-center flex flex-col justify-center space-y-8">
+            <h2
+                class="text-5xl font-semibold text-gray-700 mb-8 relative inline-block after:block after:w-40 after:h-1 after:bg-orange-400 after:mt-5 text-left">
+                Únete a MintiHub y accede a oportunidades únicas
+            </h2>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-6 sm:gap-12 hiddenElement fadeInUp">
+                <a href="#"
+                    class="bg-orange-400 text-white font-semibold px-10 py-3 rounded-full shadow-md hover:bg-orange-500 transition duration-300 w-full sm:w-auto text-center">
+                    Ver proyectos
+                </a>
+                <a href="#"
+                    class="bg-orange-400 text-white font-semibold px-10 py-3 rounded-full shadow-md hover:bg-orange-500 transition duration-300 w-full sm:w-auto text-center">
+                    Hablemos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-gray-600 py-16 mt-10 text-center md:text-left">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 pb-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">MintiHub</h3>
+                    <p class="text-lg text-gray-600">
+                        Únete a nuestra plataforma y accede a oportunidades únicas para hacer crecer tus proyectos y
+                        capital.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Enlaces rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-lg text-gray-600 hover:text-orange-400">¿Qué es MintiHub?</a></li>
+                        <li><a href="#" class="text-lg text-gray-600 hover:text-orange-400">Beneficios</a></li>
+                        <li><a href="#" class="text-lg text-gray-600 hover:text-orange-400">Misión</a></li>
+                        <li><a href="#" class="text-lg text-gray-600 hover:text-orange-400">Equipo</a></li>
+                        <li><a href="#" class="text-lg text-gray-600 hover:text-orange-400">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Síguenos</h3>
+                    <div class="space-x-6 text-lg mb-8">
+                        <a href="https://www.linkedin.com" target="_blank" class="text-gray-600 hover:text-orange-400">
+                            LinkedIn
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="text-gray-600 hover:text-orange-400">
+                            Twitter
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="text-gray-600 hover:text-orange-400">
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <p class="text-lg text-gray-600">© 2025 MintiHub. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
