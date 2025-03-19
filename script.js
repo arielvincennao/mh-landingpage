@@ -62,12 +62,12 @@ $(document).ready(function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     const elements = [
-        { selector: ".fadeIn", classes: ["animate__animated", "animate__fadeIn", "animate__slower"] },
-        { selector: ".slideLeft", classes: ["animate__animated", "animate__slideInLeft", "animate__slow"] },
-        { selector: ".slideRight", classes: ["animate__animated", "animate__slideInRight", "animate__slow"] },
-        { selector: ".flipX", classes: ["animate__animated", "animate__flipInX", "animate__slow"] },
-        { selector: ".flipY", classes: ["animate__animated", "animate__flipInY", "animate__slow"] },
-        { selector: ".fadeInUp", classes: ["animate__animated", "animate__fadeInUp", "animate__slow"] }
+        { selector: ".fadeIn", classes: ["animate__animated", "animate__fadeIn", "animate__fast"] },
+        { selector: ".slideLeft", classes: ["animate__animated", "animate__slideInLeft", "animate__fast"] },
+        { selector: ".slideRight", classes: ["animate__animated", "animate__slideInRight", "animate__fast"] },
+        { selector: ".flipX", classes: ["animate__animated", "animate__flipInX", "animate__fast"] },
+        { selector: ".flipY", classes: ["animate__animated", "animate__flipInY", "animate__fast"] },
+        { selector: ".fadeInUp", classes: ["animate__animated", "animate__fadeInUp", "animate__fast"] }
     ];
 
     const observer = new IntersectionObserver(
